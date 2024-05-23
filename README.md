@@ -66,3 +66,5 @@ terraform apply
 > NOTE - We will have to edit the **inbound rules** in the security group of our EC2, in order to allow traffic from our particular port
 
 ### A AWS EC2 instance was created🎉
+
+![About Terraform](images/terraform.png)
