@@ -31,6 +31,20 @@ sudo apt update
 git clone https://github.com/Sachin-s-DevOps-Projects/myFirst-Terraform-Project.git
 cd myFirst-Terraform-Project/aws
 ```
+> NOTE - To do next steps, you will have to configure aws. In some cases, aws cli hasn't been installed by default. So then, you have to install aws cli.
+
+To install aws cli on ec2 instance:
+```
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip -y
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version / aws -v                                     
+aws configure
+
+```
+
 2. Entering the project file where main.tf has been included
 ```
 cd myFirst-Terraform-Project/aws
@@ -41,19 +55,7 @@ cd myFirst-Terraform-Project/aws
 terraform init
 
 ```
-> NOTE - To do next steps, you will have to configure aws. In some cases, aws cli hasn't been installed by default. So then, you have to install aws cli.
 
-To install aws cli on ec2 instance:
-```
-> sudo apt update
->curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
->sudo apt install unzip -y
->unzip awscliv2.zip
->sudo ./aws/install
->aws --version / aws -v                                     
-
->After then you'll be able to configure aws  using "aws configure" command
-```
 
 4. Planning terraform
 ```
